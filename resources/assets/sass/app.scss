@@ -1,0 +1,206 @@
+$mainColor: #ed2623;
+
+body {
+	font-size: 14px;
+	font-family: 'Lato';
+	background: url('../images/bg.png') bottom 190px right -100px no-repeat;
+}
+
+.float-right {
+	float: right;
+}
+.float-left {
+	float: left;
+}
+
+.theme-color {
+	color: $mainColor;
+}
+
+.trex-title {
+	color: $mainColor;
+	font-weight: 300;
+}
+
+a {
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+ul {
+	list-style: none;
+}
+
+.top-nav-container {
+	background: $mainColor;
+	padding: 10px 0;
+	overflow: hidden;
+
+	nav {
+		ul {
+			li {
+				float: left;
+				margin-right: 20px;
+				color: white;
+				i {
+					color: white;
+				}
+				a {
+					color: white;
+				}
+			}
+		}
+	}
+}
+
+header {
+	.top-nav-container {
+		background: #fcfcfc;
+		border-bottom: 1px solid #eee;
+		padding: 10px 0;
+		overflow: hidden;
+	}
+	nav {
+
+		&.top-nav {
+			ul {
+				li {
+					float: left;
+					margin-right: 20px;
+					//font-size: 12px;
+
+					i {
+						color: $mainColor;
+						margin-right: 10px;
+					}
+
+					a {
+						color: #333;
+						text-decoration: none;
+						&:hover {
+							color: $mainColor;
+						}
+					}
+				}
+			}
+		}
+
+		&.main-nav {
+			margin-top: 40px;
+			ul {
+				li {
+					float: left;
+					margin-right: 10px;
+					a {
+						color: #333;
+						text-decoration: none;
+						padding: 3px 8px;
+						&:hover {
+							color: $mainColor;
+							border: 1px solid $mainColor;
+							border-radius: 3px;
+						}
+						&.active {
+							color: $mainColor;
+							border: 1px solid $mainColor;
+							border-radius: 3px;							
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
+
+// .main-container {
+// 	min-height: 100%;
+// 	//margin-bottom: -190px; 
+// 	&:after {
+// 		content: "";
+// 		display: block;		
+// 		height: -190px; 
+// 	}
+// }
+
+.services-container {
+
+	background: $mainColor;
+	padding-bottom: 20px;
+	.services {
+		margin-top: -100px;
+	}
+
+	.request-a-quote {
+		margin-top: 30px;
+	}
+}
+
+.page {
+	margin-top: 40px;
+
+	.trex-title {
+		margin-top: 0;
+	}
+
+	&.contact-us {
+
+		.card {
+			.card-action {
+				a {
+					color: #333;
+				}
+			}
+		}
+	}
+
+	&.alliances {
+		.card {
+			.card-title {
+				background: none;
+			}
+		}
+	}
+}
+
+.breadcrumb {
+	li {
+		a {
+			color: #333;
+		}
+	}
+}
+
+footer {
+	background: #333 url('../images/map-dark.png') top right no-repeat;
+	overflow: hidden;
+	padding: 20px;
+	margin-top: 20px;
+	h3 {
+		color: white;
+		margin-top: 40px;
+		font-weight: 300;
+	}
+	p {
+		color: white;
+		&.copyright {
+			color: white;
+		}
+		&.social-icons {
+			text-align: right;
+			margin-top: 60px;
+			a {
+				margin-right: 10px;
+				color: white;
+				&:hover {
+					color: $mainColor;
+				}
+			}	
+		}
+	}
+}
+
+@import 'components/cards';
+@import 'components/waves';
+@import 'components/media-queries';
